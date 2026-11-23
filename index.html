@@ -4,35 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Jai Ganesh — Python Developer · Automation Engineer</title>
-    <meta
-      name="description"
-      content="Jai Ganesh — Python developer and automation engineer building production pipelines, backend services, automated reporting and monitoring for high-volume VFX production."
-    />
-    <meta name="theme-color" content="#050505" />
-    <meta property="og:title" content="Jai Ganesh — Python Developer · Automation Engineer" />
-    <meta property="og:description" content="Engineering intelligence. Automating possibilities." />
+    <meta name="description" content="Jai Ganesh — Python developer and automation engineer building pipelines, backend services, automated reporting and monitoring for high-volume VFX production." />
+    <meta name="theme-color" content="#0e0e0f" />
+    <!-- Link previews (WhatsApp, LinkedIn, X, Slack...). The image is the final hero, 1200x630, in public/. -->
+    <link rel="canonical" href="https://jaiganesh2244.github.io/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jai Ganesh" />
+    <meta property="og:title" content="Jai Ganesh — Python Developer · Automation Engineer" />
+    <meta property="og:description" content="Python developer and automation engineer building pipelines, backend services, automated reporting and monitoring for high-volume VFX production." />
     <meta property="og:url" content="https://jaiganesh2244.github.io/" />
     <meta property="og:image" content="https://jaiganesh2244.github.io/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:image:alt" content="Jai Ganesh — a gold laurel-crowned marble bust with the signature Jai Ganesh written across it" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://jaiganesh2244.github.io/" />
+    <meta name="twitter:title" content="Jai Ganesh — Python Developer · Automation Engineer" />
+    <meta name="twitter:description" content="Python developer and automation engineer building pipelines, backend services, automated reporting and monitoring for high-volume VFX production." />
+    <meta name="twitter:image:alt" content="Jai Ganesh — a gold laurel-crowned marble bust with the signature Jai Ganesh written across it" />
+    <meta name="twitter:image" content="https://jaiganesh2244.github.io/og-image.jpg" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <style>
-      html, body { background: #050505; margin: 0; }
+      html, body { background: #0e0e0f; margin: 0; }
     </style>
-    <script type="module" crossorigin src="/assets/index-DZer2oES.js"></script>
+    <script>
+      // The home page plays its intro on every load: keep the site chrome hidden from the very first
+      // paint (the hero removes this when its intro ends; the timer is only a safety net).
+      try {
+        if (location.pathname === '/' && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          document.documentElement.setAttribute('data-intro', 'on');
+          setTimeout(function () { document.documentElement.removeAttribute('data-intro'); }, 12000);
+        }
+        if (location.pathname === '/') {
+          // Start downloading the 3D statue (3.7 MB) at the very first paint, before the scripts have run.
+          var l = document.createElement('link');
+          l.rel = 'preload'; l.as = 'fetch'; l.href = '/media/hero/statue.glb'; l.crossOrigin = 'anonymous';
+          document.head.appendChild(l);
+        }
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-CVrpNlzW.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/motion-DXPVyqmB.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-DvZ9N3uq.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-B3WU_Arq.css">
   </head>
   <body>
     <div id="root"></div>
     <noscript>
-      <div style="padding:3rem;font-family:Georgia,serif;color:#ece6db;background:#050505">
+      <div style="padding:3rem;font-family:system-ui,sans-serif;color:#e9e6e1;background:#0e0e0f">
         <h1>Jai Ganesh</h1>
         <p>Python Developer · Automation Engineer · Pipeline Development — Chennai, India.</p>
-        <p><a style="color:#d6bd8c" href="mailto:jaiganesh2244@gmail.com">jaiganesh2244@gmail.com</a></p>
+        <p><a style="color:#ff3b2e" href="mailto:jaiganesh2244@gmail.com">jaiganesh2244@gmail.com</a></p>
       </div>
     </noscript>
   </body>

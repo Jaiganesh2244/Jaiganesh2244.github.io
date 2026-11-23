@@ -1,1 +1,0 @@
-import{r as o}from"./index-DZer2oES.js";let t={ready:!1,sheet:!1};const s=new Set,r={get:()=>t,set(e){t={...t,...e},s.forEach(a=>a())},subscribe(e){return s.add(e),()=>{s.delete(e)}}},i=()=>o.useSyncExternalStore(r.subscribe,r.get,r.get);export{r as m,i as u};
